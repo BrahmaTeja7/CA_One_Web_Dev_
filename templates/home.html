@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            animation: fadeIn 2s forwards, fadeBackground 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeBackground {
+            0% {
+                background-color: #f0f0f0;
+            }
+            100% {
+                background-color: #ffffff;
+            }
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .email-automation {
+            margin-bottom: 20px;
+        }
+
+        .sign-in-link {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .sign-in-link:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to Flask Mail</h1>
+    <div class="content">
+        <!-- <p>This is a simple example of a homepage with a fade-in animation.</p> -->
+        <p class="email-automation">Learn more about our <strong>Flask Mail</strong> services and streamline your communication process.</p>
+        <p>If you're an existing user, please <a href="/login" class="sign-in-link">sign in</a> to access your account.</p>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Flask Mail. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="/terms">Terms of Service</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
